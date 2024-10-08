@@ -19,7 +19,6 @@ const Com: NextPage = () => {
   return (
     <div>
       <h1>THIS</h1>
-
     </div>
   );
 };
