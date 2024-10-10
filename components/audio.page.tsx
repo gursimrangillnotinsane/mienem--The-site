@@ -11,7 +11,12 @@ export default function AudioPlayer(props: { play: unknown; onFinish: () => void
 
     const playAudio = () => {
         if (audioRef.current) {
-            audioRef.current.play();
+            // Set the start time first, then play the audio
+            audioRef.current.currentTime = 18.5;
+            audioRef.current.muted = false;
+            audioRef.current.play().catch(error => {
+                console.error("Playback error:", error); // Handle errors in case playback is blocked
+            });
         }
     };
 
@@ -24,7 +29,7 @@ export default function AudioPlayer(props: { play: unknown; onFinish: () => void
 
     return (
         <div>
-            <audio ref={audioRef} controls className="hidden" onEnded={handleAudioEnded}>
+            <audio ref={audioRef} autoPlay loop muted onEnded={handleAudioEnded}>
                 <source src={props.src} type="audio/mp3" />
                 Your browser does not support the audio element.
             </audio>

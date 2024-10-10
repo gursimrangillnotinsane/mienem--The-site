@@ -14,18 +14,13 @@ query Entries {
 
 
 const mainheading: NextPage = () => {
-    const [playSubmitSound, setPlaySubmitSound] = useState(false);
-    return (
-        <div>
-            <h1>MIENEM</h1>
-            <AudioPlayer
-                src="../resource/favicon.ico"
-                play={playSubmitSound}
-                onFinish={() => setPlaySubmitSound(false)}
-            />
-            <button onClick={() => setPlaySubmitSound(true)}>sound</button>;
-        </div>
-    );
+  return (
+    <div>
+      <h1>MIENEM</h1>
+
+
+    </div>
+  );
 };
 
 export default mainheading;

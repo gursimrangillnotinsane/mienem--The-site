@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence:SCAN,XELA@60,100&family=Updock&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 :root {
   --background: #ffffff;
@@ -20,8 +22,8 @@ div {
 
 body {
   background: rgb(222, 226, 191);
-  background: linear-gradient(180deg, rgba(220, 220, 215, 0.839) 0%, rgba(79, 79, 72, 0.82) 47%, rgba(0, 0, 0, 1) 100%);
-  /*   background-repeat: no-repeat; /* Prevents repeating */
+  /* background: linear-gradient(180deg, rgba(220, 220, 215, 0.839) 0%, rgba(79, 79, 72, 0.82) 47%, rgba(0, 0, 0, 1) 100%); */
+  background: linear-gradient(180deg, rgba(10, 10, 10, 0.839) 0%, rgba(222, 222, 174, 0.82) 47%, rgba(0, 0, 0, 1) 100%);
   height: 100vh;
 }
 
@@ -29,4 +31,61 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.updock-regular {
+  font-family: "Updock", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 5rem;
+  color: rgb(116, 54, 10)
+}
+
+.img-left {
+  position: fixed;
+  top: 20%;
+  left: 60%;
+}
+
+.img-main-cointainer {
+  position: fixed;
+  top: 25%;
+  left: 30%;
+}
+
+.img-main {
+  height: 400px;
+  width: 600px;
+}
+
+@media only screen and (max-width: 600px) {
+  .main-grid {
+    padding: 1rem;
+    height: 100vh;
+  }
+
+  .w-4\/6 {
+    width: 180%;
+  }
+
+  .h-96 {
+    height: 12rem;
+  }
+
+  .img-left {
+    top: 34%;
+    left: 16%;
+  }
+
+  .img-main {
+    height: auto;
+    width: auto;
+  }
+
+  .img-main-cointainer {
+    top: 27%;
+    left: 3%;
+    right: 12%;
+  }
+
 }
