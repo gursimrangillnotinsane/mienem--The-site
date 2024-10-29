@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
 import Page from "./page";
 
@@ -17,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Page />
+        {children}
       </body>
     </html>
   );

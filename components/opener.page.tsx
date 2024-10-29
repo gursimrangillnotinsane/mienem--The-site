@@ -1,12 +1,10 @@
 
-import { NextPage } from 'next';
+
 import React, { useEffect, useState } from 'react';
-import MainHeading from './mainheading.page';
-import { connect } from 'http2';
 import AudioPlayer from './audio.page';
+import MainHeading from './mainheading.page';
 
-
-const openerpage: NextPage = () => {
+const openerpage = () => {
     const [visibleItems, setVisibleItems] = useState([false, false, false, false, false, false, false]);
     const [start, setStart] = useState(false);
     const [playSubmitSound, setPlaySubmitSound] = useState(false);

@@ -1,28 +1,16 @@
-import React, { useRef, useEffect, useState } from "react";
-import { useQuery, gql } from '@apollo/client'
-import { NextPage } from 'next';
-import AudioPlayer from "./audio.page";
+
 import Goodreads from "./mainpage.goodreads.page";
 import MainpageSpotify from "./mainpage.spotify.page";
-const query = gql`
-query Entries {
-  entries {
-    title
-    price
-    image
-  }
-}
-`;
+import Link from 'next/link';
 
-
-const mainheading: NextPage = () => {
+const mainheading = () => {
   return (
-    <div className="h-screen flex px-40	">
+    <div className="h-screen flex justify-center px-1 sm:px-64">
       <div className="container ">
         {/* first row */}
-        <div className="header flex justify-between">
+        <div className="header flex sm:justify-between ">
           <img src="/header.png" alt="logo" />
-          <img src="https://i.pinimg.com/564x/eb/6f/39/eb6f393a36dea120ba4668f6bb0b98f2.jpg" alt="logo" />
+          <img className="px-1" src="https://i.pinimg.com/564x/f4/24/37/f4243783d21245777acea33cbfddf4cc.jpg" alt="logo" />
         </div>
         <div className="headertwo">
           <img src="/poster.png" alt="logo" />
@@ -35,10 +23,18 @@ const mainheading: NextPage = () => {
         </div>
         <div className="links">
           <div className="flex justify-around pt-6">
-            <img src="/linksPics/anime.png" alt="anime" />
-            <img src="/linksPics/books.png" alt="books" />
-            <img src="/linksPics/films.png" alt="films" />
-            <img src="/linksPics/projects.png" alt="projects" />
+            <Link href="/anime">
+              <img src="/linksPics/anime.png" alt="anime" />
+            </Link>
+            <Link href="/books">
+              <img src="/linksPics/books.png" alt="books" />
+            </Link>
+            <Link href="/films">
+              <img src="/linksPics/films.png" alt="films" />
+            </Link>
+            <Link href="/projects">
+              <img src="/linksPics/projects.png" alt="projects" />
+            </Link>
           </div>
         </div>
 
@@ -62,7 +58,7 @@ const mainheading: NextPage = () => {
         <div className="sideme">
           <div className="textBack">
             <p>
-              I like watching peaceful anime and playing chaotic games .My music taste is all over the place but lately I am enjoying R&B, hip-hop and shorgaze.
+              I like watching peaceful anime and playing chaotic games .My music taste is all over the place but lately I am enjoying R&B, hip-hop and shoegaze.
             </p>
           </div>
         </div>

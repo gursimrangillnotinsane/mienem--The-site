@@ -7,7 +7,8 @@ import { NextPage } from 'next';
 import React from "react";
 import { Main } from "next/document";
 
-const Page: NextPage = () => {
+const Page = () => {
+  console.log("main");
   return <>
     <div>
 
