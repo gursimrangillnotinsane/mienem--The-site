@@ -43,11 +43,11 @@ const mainheading = () => {
         </div>
         <div className="aboutme">
           <div className="flex  flex-col">
-            <h2 className="textBack">"I am a cage, in search of a bird." </h2>
+            <h2 className="textBack"> &ldquo; I am a cage, in search of a bird. &ldquo;</h2>
             <p className="self-end">- Franz Kafka</p>
             <p>
 
-              19, he/him, esfj, someone who loves literally anything, will be found online most of the time doing silly things . Can't decide their favourite in any form of media.
+              19, he/him, esfj, someone who loves literally anything, will be found online most of the time doing silly things . Cannot decide their favourite in any form of media.
             </p>
           </div>
         </div>
