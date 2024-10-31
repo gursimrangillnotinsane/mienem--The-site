@@ -101,7 +101,7 @@ a>img {
     "header header headertwo"
     "name   links    headertwo"
     "sideimg aboutme spotify"
-    "sideme  imgeyes  linkstwo";
+    "sideme  linkstwo  linkstwo";
   gap: 1%;
   height: -webkit-fill-available;
 }
@@ -172,16 +172,6 @@ a>img {
 }
 
 
-.imgeyes {
-  grid-area: imgeyes;
-  display: flex;
-  justify-content: space-between;
-}
-
-.imgeyes>img {
-  width: 50%;
-  height: 70%;
-}
 
 .linkstwo {
   grid-area: linkstwo;
@@ -192,7 +182,9 @@ a>img {
   padding: 2%;
   background-color: #c6c6b357;
   width: 97%;
-  ;
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
 }
 
 .linksInner>li {
@@ -246,7 +238,7 @@ a>img {
 }
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1400px) {
   h1 {
     font-size: 3rem;
   }
@@ -259,10 +251,10 @@ a>img {
       "header header "
       "name   headertwo "
       "links  headertwo"
-      "aboutme spotify"
-      "imgeyes imgeyes   "
-      "sideme linkstwo "
-      /* 
+      "aboutme aboutme"
+      "sideme sideme "
+      "linkstwo linkstwo";
+    /* 
       "header header headertwo"
       "name   links    headertwo"
       "sideimg aboutme spotify"
@@ -293,9 +285,7 @@ a>img {
     padding: 0;
   }
 
-  .aboutme>div>p:last-child {
-    width: 125%;
-  }
+
 
   .sideimg {
     visibility: hidden;
