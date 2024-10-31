@@ -8,7 +8,6 @@ import React from "react";
 import { Main } from "next/document";
 
 const Page = () => {
-  console.log("main");
   return <>
     <div>
 

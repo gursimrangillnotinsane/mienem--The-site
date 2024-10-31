@@ -10,11 +10,11 @@ const apolloServer = new ApolloServer({
 })
 
 
-export const config = {
-    api: {
-        bodyParser: false,
-    },
-};
+// export const config = {
+//     api: {
+//         bodyParser: false,
+//     },
+// };
 
 // Typescript: req has the type NextRequest
 const handler = startServerAndCreateNextHandler<NextRequest>(apolloServer, {
