@@ -1,5 +1,5 @@
 'use client';
-import client from "../lib/client";
+import client from "../../mienem_api/lib/client";
 import { ApolloProvider } from '@apollo/client'
 import Openerpage from '../components/opener.page'
 import MainHeading from '../components/mainheading.page'

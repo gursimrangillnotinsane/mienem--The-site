@@ -1,7 +1,7 @@
 
 
 import React, { useEffect, useState } from 'react';
-import AudioPlayer from './audio.page';
+
 import MainHeading from './mainheading.page';
 
 const openerpage = () => {
@@ -27,11 +27,6 @@ const openerpage = () => {
 
     return (
         <div>
-            <AudioPlayer
-                src="/audio.mp3"
-                play={playSubmitSound}
-                onFinish={() => setPlaySubmitSound(false)}
-            />
             {!visibleItems[0] && (<div className='grid grid-flow-row grid-flow-cols place-content-center h-screen' >
                 <button onClick={() => { setStart(true); setPlaySubmitSound(true); }}>
                     <h1 className='updock-regular'> Hop on the journey cowboy!</h1>

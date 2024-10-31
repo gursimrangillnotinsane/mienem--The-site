@@ -1,7 +1,7 @@
 
 
 import MainpageSpotify from "./mainpage.spotify.page";
-import Link from 'next/link';
+
 
 const mainheading = () => {
   return (
