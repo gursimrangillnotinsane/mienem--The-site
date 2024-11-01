@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-
+import mixpanel from "mixpanel-browser";
 
 
 
@@ -9,14 +9,22 @@ export const metadata: Metadata = {
   description: "carrd by mienem",
 };
 
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // Near entry of your product, init Mixpanel
+  mixpanel.init("f5d1fdb7e92b09cb5c9720165c0b893f", {
+    debug: true,
+    track_pageview: true,
+    persistence: "localStorage",
+  });
+
   return (
     <html lang="en">
-      <head>
+      {/* <head>
         <script type="text/javascript">
           {`
           (function(c,l,a,r,i,t,y){
@@ -26,7 +34,7 @@ export default function RootLayout({
     })(window, document, "clarity", "script", "oryas4n2ws");
     `}
         </script>
-      </head>
+      </head> */}
       <body>
         {children}
       </body>
