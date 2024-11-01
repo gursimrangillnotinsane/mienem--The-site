@@ -23,6 +23,7 @@ export default function RootLayout({
       <body>
         {children}
         <Script src="https://scripts.simpleanalyticscdn.com/latest.js" />
+        <Script defer src="https://cloud.umami.is/script.js" data-website-id="a32734c3-5097-4e8c-a01b-49f47e85db4c" />
       </body>
     </html>
   );
