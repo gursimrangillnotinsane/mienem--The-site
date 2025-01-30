@@ -47,7 +47,7 @@ const mainheading = () => {
             <p className="self-end">- Franz Kafka</p>
             <p>
 
-              19, he/him, esfj, someone who loves literally anything, will be found online most of the time doing silly things . Cannot decide their favourite in any form of media.
+              20, he/him, esfj, someone who loves literally anything, will be found online most of the time doing silly things . Cannot decide their favourite in any form of media.
             </p>
           </div>
         </div>
